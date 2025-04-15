@@ -33,3 +33,32 @@
 | **TD-GPT + WinAgg (multilabel loss)** | 0.732 ± 0.0201        | 0.7957 ± 0.0115 |
 
 ----
+
+# Age Prediction Dataset:
+
+**Baselines:**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences** | 0.4921 ± 0.005    | 0.76 ± 0.0012     |
+| **GRU (+ MLP)**         | 0.6066 ± 0.0019   | 0.8479 ±  0.0013  |
+| **CoLES**               | 0.6042 ± 0.0083   | 0.8482 ± 0.0007   |
+| **CPC Modeling**        | 0.5762 ± 0.0058   | 0.8305 ± 0.003    |
+| **GPT2**                | 0.6146 ± 0.0075   | 0.852 ± 0.0029    |
+
+----
+
+**Window Aggregation (non-overlapping windows):**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                   | 0.4921 ± 0.005        | 0.76 ± 0.0012   |
+| **GRU (+ MLP)**                           | 0.6066 ± 0.0019       | 0.8479 ± 0.0013 |
+| **CoLES**                                 | 0.6042 ± 0.0083       | 0.8482 ± 0.0007 |
+| **COLES embeds + WinAgg (3 trx)**         | 0.5848 ± 0.0023       | 0.8334 ± 0.0011 |
+| **CPC Modeling**                          | 0.5762 ± 0.0058       | 0.8305 ± 0.003  |
+| **CPC Modeling + WinAgg (3 trx)**         | 0.5842 ± 0.0059       | 0.8335 ± 0.0014 |
+| **GPT2**                                  | 0.6146 ± 0.0075       | 0.852 ± 0.0029  |
+| **GPT2 + WinAgg (4 trx, next N trx loss)**| 0.5991 ± 0.0023       | 0.8425 ± 0.0005 |
+
+----
