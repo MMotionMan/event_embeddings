@@ -32,6 +32,7 @@
 | **TD-GPT**                            | 0.73 ± 0.0049         | 0.7949 ± 0.0065 |
 | **TD-GPT + WinAgg (multilabel loss)** | 0.732 ± 0.0201        | 0.7957 ± 0.0115 |
 
+---
 
 **Aggregation by Days:**
 
