@@ -49,6 +49,24 @@
 | **TD-GPT**                                         | 0.73 ± 0.0049         | 0.7949 ± 0.0065 |
 | **TD-GPT + AggByDays**                             |   -                   | -               |
 
+
+----
+
+**Convolutional Aggregation (overlapping windows):**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                | 0.67 ± 0.0046         | 0.7536 ± 0.003  |
+| **GRU (+ MLP)**                        | 0.746 ± 0.0076        | 0.8148 ± 0.0037 |
+| **CoLES**                              | 0.726 ± 0.0071        | 0.8076 ± 0.0025 |
+| **COLES embeds + ConvAgg (7 trx)**     | 0.7393 ± 0.0133       | 0.8122 ± 0.0128 |
+| **CPC Modeling (emb_dim=32)**          | 0.747 ± 0.0041        | 0.8099 ± 0.0035 |
+| **CPC Modeling (emb_dim=32) + ConvAgg**| 0.7507 ± 0.0057       | 0.8179 ± 0.0061 |
+| **CPC Modeling (emb_dim=8)**           | 0.747 ± 0.0052        | 0.8165 ± 0.0032 |
+| **CPC Modeling (emb_dim=8) + ConvAgg** | 0.7293 ± 0.0074       | 0.8068 ± 0.0075 |
+| **TD-GPT**                             | 0.73 ± 0.0049         | 0.7949 ± 0.0065 |
+| **TD-GPT + ConvAgg**                   | 0.722 ± 0.0278        | 0.7896 ± 0.0181 |
+
 ----
 
 # Age Prediction Dataset:
