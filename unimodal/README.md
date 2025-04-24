@@ -112,3 +112,16 @@
 | **GPT2 + AggByDays**                                 | -                     | -               |
 
 ----
+
+**Convolutional Aggregation (overlapping windows):**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                   | 0.4921 ± 0.005        | 0.76 ± 0.0012   |
+| **GRU (+ MLP)**                           | 0.6066 ± 0.0019       | 0.8479 ± 0.0013 |
+| **CoLES**                                 | 0.6042 ± 0.0083       | 0.8482 ± 0.0007 |
+| **COLES embeds + ConvAgg (3 trx)**        | 0.6027 ± 0.0023       | 0.8461 ± 0.0013 |
+| **CPC Modeling**                          | 0.5762 ± 0.0058       | 0.8305 ± 0.003  |
+| **CPC Modeling + ConvAgg (5 trx)**        | 0.585 ± 0.0043        | 0.8317 ± 0.0018 |
+| **GPT2**                                  | 0.6146 ± 0.0075       | 0.852 ± 0.0029  |
+| **GPT2 + ConvAgg ()**                     | 0.6128 ± 0.0019       | 0.8523 ± 0.0015 |
