@@ -69,6 +69,21 @@
 
 ----
 
+**Hierarchical aggregation with SWIN transformer:**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                                              | 0.67 ± 0.0046         | 0.7536 ± 0.003  |
+| **GRU (+ MLP)**                                                      | 0.746 ± 0.0076        | 0.8148 ± 0.0037 |
+| **CoLES**                                                            | 0.726 ± 0.0071        | 0.8076 ± 0.0025 |
+| **COLES embeds + SWIN Agg encoder & ConvAgg (3 trx)**                | 0.7527 ± 0.0093       | 0.81 ± 0.0052   |
+| **CPC Modeling (emb_dim=32)**                                        | 0.747 ± 0.0041        | 0.8099 ± 0.0035 |
+| **CPC Modeling (emb_dim=32) w/ SWIN Agg encoder**                    | 0.7467 ± 0.0025       | 0.8161 ± 0.0046 |
+| **CPC Modeling (emb_dim=32) w/ SWIN Agg encoder (smaller win size)** | 0.748 ± 0.0049        | 0.8122 ± 0.0036 |
+| **TD-GPT**                                                           | 0.73 ± 0.0049         | 0.7949 ± 0.0065 |
+
+----
+
 # Age Prediction Dataset:
 
 **Baselines:**
