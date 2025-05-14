@@ -84,6 +84,24 @@
 
 ----
 
+**Hybrid approach: aggregation with Dense CNN:**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                    | 0.67 ± 0.0046         | 0.7536 ± 0.003  |
+| **GRU (+ MLP)**                            | 0.746 ± 0.0076        | 0.8148 ± 0.0037 |
+| **CoLES**                                  | 0.726 ± 0.0071        | 0.8076 ± 0.0025 |
+| **COLES embeds + DenseCNN_Agg (1 layer)**  | 0.7293 ± 0.0068       | 0.8093 ± 0.0053 |
+| **COLES embeds + DenseCNN_Agg (2 layers)** | 0.7333 ± 0.0159       | 0.8046 ± 0.0093 |
+| **COLES embeds + DenseCNN_Agg (4 layers)** | 0.7327 ± 0.0075       | 0.8001 ± 0.0095 |
+| **CPC Modeling**                           | 0.747 ± 0.0041        | 0.8099 ± 0.0035 |
+| **CPC Modeling + DenseCNN_Agg (1 layer)**  | 0.7433 ± 0.009        | 0.8187 ± 0.0043 |
+| **CPC Modeling + DenseCNN_Agg (2 layers)** | 0.746 ± 0.0033        | 0.8131 ± 0.0044 |
+| **CPC Modeling + DenseCNN_Agg (4 layers)** | 0.7473 ± 0.0094       | 0.8131 ± 0.0053 |
+| **TD-GPT**                                 | 0.73 ± 0.0049         | 0.7949 ± 0.0065 |
+
+----
+
 # Age Prediction Dataset:
 
 **Baselines:**
