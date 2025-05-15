@@ -172,3 +172,21 @@
 | **CPC Modeling**                          | 0.5762 ± 0.0058       | 0.8305 ± 0.003  |
 | **CPC Modeling w/ SWIN Agg encoder**      | 0.5788 ± 0.0079       | 0.8259 ± 0.0029 |
 | **GPT2**                                  | 0.6146 ± 0.0075       | 0.852 ± 0.0029  |
+
+----
+
+**Hybrid approach: aggregation with Dense CNN:**
+
+| Method|Accuracy|ROC-AUC|
+| --- |:---:|:---:|
+| **Flattened Sequences**                    | 0.4921 ± 0.005        | 0.76 ± 0.0012   |
+| **GRU (+ MLP)**                            | 0.6066 ± 0.0019       | 0.8479 ± 0.0013 |
+| **CoLES**                                  | 0.6042 ± 0.0083       | 0.8482 ± 0.0007 |
+| **COLES embeds + DenseCNN_Agg (1 layer)**  | 0.6028 ± 0.0031       | 0.8491 ± 0.0016 |
+| **COLES embeds + DenseCNN_Agg (2 layers)** | 0.6022 ± 0.0048       | 0.8477 ± 0.0023 |
+| **COLES embeds + DenseCNN_Agg (4 layers)** | 0.601 ± 0.0007        | 0.8458 ± 0.0016 |
+| **CPC Modeling**                           | 0.5762 ± 0.0058       | 0.8305 ± 0.003  |
+| **CPC Modeling + DenseCNN_Agg (1 layer)**  | 0.5773 ± 0.0012       | 0.8271 ± 0.0016 |
+| **CPC Modeling + DenseCNN_Agg (2 layers)** | 0.5554 ± 0.0068       | 0.8111 ± 0.0042 |
+| **CPC Modeling + DenseCNN_Agg (4 layers)** | 0.527 ± 0.0051        | 0.7887 ± 0.0014 |
+| **GPT2**                                   | 0.6146 ± 0.0075       | 0.852 ± 0.0029  |
